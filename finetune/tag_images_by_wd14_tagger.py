@@ -499,6 +499,7 @@ def setup_parser() -> argparse.ArgumentParser:
 
 
 if __name__ == "__main__":
+    # args = argparse.Namespace(train_data_dir='../dataset', repo_id='SmilingWolf/wd-v1-4-convnext-tagger-v2', model_dir='../tag_models/wd-v1-4-moat-tagger-v2', force_download=False, batch_size=8, max_data_loader_n_workers=2, caption_extention=None, caption_extension='.txt', thresh=0.35, general_threshold=0.35, character_threshold=0.35, recursive=False, remove_underscore=True, debug=True, undesired_tags='', frequency_tags=False, onnx=False, append_tags=False, use_rating_tags=False, use_rating_tags_as_last_tag=False, character_tags_first=False, always_first_tags=None, caption_separator=', ', tag_replacement=None, character_tag_expand=False)
     parser = setup_parser()
 
     args = parser.parse_args()
