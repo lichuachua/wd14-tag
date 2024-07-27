@@ -328,6 +328,7 @@ def main(args):
                     logger.info(f"\tGeneral tags: {general_tag_text}")
 
     # 読み込みの高速化のためにDataLoaderを使うオプション
+    import torch
     if args.max_data_loader_n_workers is not None:
         dataset = ImageLoadingPrepDataset(image_paths)
         data = torch.utils.data.DataLoader(
